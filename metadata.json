@@ -1,0 +1,8 @@
+
+{
+  "name": "Sports Skill Analysis AI",
+  "description": "An advanced AI-powered system for analyzing student sports performance using computer vision and the Gemini API. Evaluates posture, technique, agility, consistency, and efficiency.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
