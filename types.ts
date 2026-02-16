@@ -1,38 +1,41 @@
 
+export enum SportType {
+  Volleyball = 'วอลเลย์บอล',
+  Futsal = 'ฟุตซอล',
+  Takraw = 'ตะกร้อ',
+  Badminton = 'แบดมินตัน',
+  Athletics = 'กรีฑา',
+  TableTennis = 'เทเบิลเทนนิส'
+}
+
+export enum TestType {
+  PreTest = 'ก่อนเรียน',
+  PostTest = 'หลังเรียน'
+}
+
 export interface Student {
   studentId: string;
   fullName: string;
-  classNo: string;
+  gradeClass: string;
+  number: string;
 }
 
 export interface AnalysisResult {
+  posture: number;
+  technique: number;
+  agility: number;
+  consistency: number;
+  efficiency: number;
   totalScore: number;
   averageScore: number;
   strengths: string;
-  improvements: string;
-  comments: string;
-  videoUrl?: string;
-  scores: {
-    posture: number;
-    technique: number;
-    agility: number;
-    consistency: number;
-    efficiency: number;
-  };
+  weaknesses: string;
+  suggestions: string;
+  sport: SportType;
+  testType: TestType;
 }
 
-export enum AppState {
-  SEARCH,
-  UPLOAD,
-  ANALYZING,
-  RESULT
-}
-
-export interface UploadData {
-  studentId: string;
-  fullName: string;
-  classNo: string;
-  subject: string;
-  testType: string;
-  file: File;
+export interface SaveData extends Student, AnalysisResult {
+  timestamp: string;
+  videoLink: string;
 }

@@ -1,7 +1,6 @@
-
 {
-  "name": "Sports Skill Analysis AI",
-  "description": "An advanced AI-powered system for analyzing student sports performance using computer vision and the Gemini API. Evaluates posture, technique, agility, consistency, and efficiency.",
+  "name": "Tun-Sports-Skill-Analyzer",
+  "description": "ระบบวิเคราะห์ทักษะกีฬาพื้นฐาน โรงเรียนเตรียมอุดมศึกษาน้อมเกล้า โดยใช้ Gemini AI วิเคราะห์วิดีโอรายบุคคล",
   "requestFramePermissions": [
     "camera"
   ]
